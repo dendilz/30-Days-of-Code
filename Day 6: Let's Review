@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+x = int(input())
+
+for _ in range(x):
+    string = input()
+    new_string = ''
+    for index in range(len(string)):
+        if index % 2 == 0:
+            new_string += string[index]
+
+    new_string += ' '
+
+    for index in range(len(string)):
+        if index % 2 != 0 :
+            new_string += string[index]
+
+    print(new_string)
